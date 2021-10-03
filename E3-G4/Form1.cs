@@ -61,5 +61,14 @@ namespace E3_G4
             arreglo[4].CalcularArea(label8);
 
         }
+
+        private void brnCalcular3_Click(object sender, EventArgs e)
+        {
+            double dma = double.Parse(txtDma.Text);
+            double dme = double.Parse(txtDm.Text);
+            double A=0;
+            Rombo rombo = new Rombo(A,dma, dme);
+            rombo.CalcularArea(lbRombo);
+        }
     }
 }
